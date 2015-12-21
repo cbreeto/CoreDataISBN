@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Automatic">
+    <entity name="Libro" syncable="YES">
+        <attribute name="autor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isbn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="portada" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <fetchRequest name="consultaISBN" entity="Libro" predicateString="isbn == $isbn"/>
+    <fetchRequest name="consultaTodos" entity="Libro"/>
+    <elements>
+        <element name="Libro" positionX="261" positionY="198" width="128" height="105"/>
+    </elements>
+</model>
